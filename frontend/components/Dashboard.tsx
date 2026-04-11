@@ -210,9 +210,9 @@ export default function Dashboard() {
             <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest mb-3">Score Legend</p>
             <div className="space-y-2">
               {[
-                { range: '0 – 29',  label: 'Low Risk',    action: 'Approve',        color: '#22c55e' },
-                { range: '30 – 69', label: 'Medium Risk', action: 'Manual Review',  color: '#f59e0b' },
-                { range: '70 – 100',label: 'High Risk',   action: 'Reject',         color: '#f43f5e' },
+                { range: '0 – 34',   label: 'Low Risk',    action: 'Approve',       color: '#22c55e' },
+                { range: '35 – 64',  label: 'Medium Risk', action: 'Manual Review', color: '#f59e0b' },
+                { range: '65 – 100', label: 'High Risk',   action: 'Reject',        color: '#f43f5e' },
               ].map(l => (
                 <div key={l.range} className="flex items-center gap-2.5">
                   <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: l.color }} />

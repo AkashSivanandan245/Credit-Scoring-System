@@ -79,15 +79,15 @@ def predict(data: PredictionInput):
     prob = model.predict_proba(features)[0][1]
     risk_score = round(prob * 100, 2)
 
-    if risk_score < 30:
-        risk_level = "Low"
-        decision = "Approve"
-    elif risk_score < 70:
-        risk_level = "Medium"
-        decision = "Review"
+    if risk_score < 35:
+       risk_level = "Low"
+       decision = "Approve"
+    elif risk_score < 65:
+       risk_level = "Medium"
+       decision = "Review"
     else:
-        risk_level = "High"
-        decision = "Reject"
+       risk_level = "High"
+       decision = "Reject"
 
     feature_names = [
         "credit_score", "late_payment_count", "account_age_months",
