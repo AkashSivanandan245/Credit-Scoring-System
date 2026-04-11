@@ -15,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_PATH = os.environ.get("MODEL_PATH", "credit_risk_model.pkl")
+MODEL_PATH = os.environ.get("MODEL_PATH", "credit_risk_model2.pkl")
 model = None
 
 @app.on_event("startup")
