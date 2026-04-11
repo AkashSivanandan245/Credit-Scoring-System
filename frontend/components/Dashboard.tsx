@@ -63,7 +63,7 @@ export default function Dashboard() {
             </div>
             <div>
               <h1 className="text-sm font-semibold text-white tracking-wide">CreditLens</h1>
-              <p className="text-[10px] text-gray-500 leading-none mt-0.5">Alternative Credit Scoring · Unbanked Women</p>
+              <p className="text-[10px] text-gray-500 leading-none mt-0.5">Financial Inclusion Scoring · Unbanked Women </p>
             </div>
           </div>
           <div className="flex items-center gap-2">

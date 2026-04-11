@@ -2,7 +2,6 @@ import { FieldConfig } from './types'
 
 export const FIELDS: FieldConfig[] = [
   // Financial
-  { key: 'credit_score',            label: 'Credit Score',              min: 300, max: 900,  step: 1,    category: 'financial',  icon: '📊' },
   { key: 'late_payment_count',      label: 'Late Payment Count',        min: 0,   max: 50,   step: 1,    category: 'financial',  icon: '⚠️' },
   { key: 'account_age_months',      label: 'Account Age',               min: 0,   max: 360,  step: 1,    unit: 'mo', category: 'financial',  icon: '📅' },
   { key: 'total_outstanding_debt',  label: 'Outstanding Debt',          min: 0,   max: 500000, step: 100, unit: '₹', category: 'financial',  icon: '💳' },
@@ -21,7 +20,7 @@ export const FIELDS: FieldConfig[] = [
 ]
 
 export const DEFAULTS: Record<string, number> = {
-  credit_score: 650,
+  credit_score: 300,
   late_payment_count: 2,
   account_age_months: 24,
   total_outstanding_debt: 15000,
