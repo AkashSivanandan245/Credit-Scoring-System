@@ -68,28 +68,8 @@ git init
 git add .
 git commit -m "Initial commit"
 ```
-Go to github.com → New Repository → name it `credit-risk-dashboard` → copy the push commands shown and run them.
 
-### STEP 4 — Deploy Backend to Render (free)
-1. Go to render.com → Sign up / Log in
-2. Click **New → Web Service**
-3. Connect your GitHub repo
-4. Set **Root Directory** to `backend`
-5. Set **Build Command**: `pip install -r requirements.txt`
-6. Set **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-7. Click **Deploy**
-8. Wait ~3 mins → copy your Render URL (e.g. `https://your-app.onrender.com`)
 
-### STEP 5 — Deploy Frontend to Vercel
-1. Go to vercel.com → Sign up / Log in with GitHub
-2. Click **Add New → Project**
-3. Import your `credit-risk-dashboard` repo
-4. Set **Root Directory** to `frontend`
-5. Under **Environment Variables** add:
-   - Key: `NEXT_PUBLIC_API_URL`
-   - Value: your Render URL from Step 4 (e.g. `https://your-app.onrender.com`)
-6. Click **Deploy**
-7. Done! Your dashboard is live.
 
 ---
 
